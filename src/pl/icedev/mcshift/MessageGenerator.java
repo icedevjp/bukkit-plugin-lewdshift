@@ -83,18 +83,8 @@ public class MessageGenerator {
 		mappings.put(EntityType.ELDER_GUARDIAN, "starszego strażnika");
 		mappings.put(EntityType.ENDER_DRAGON, "smoka");
 		mappings.put(EntityType.ILLUSIONER, "iluzjonistę");
-		
-		// 1.18
+
 		mappings.put(EntityType.BEE, "pszczołę");
-		mappings.put(EntityType.AXOLOTL, "axolota");
-		mappings.put(EntityType.GOAT, "kozę");
-		mappings.put(EntityType.GLOW_SQUID, "świecącą kałamarnicę");
-		
-		// 1.19
-		mappings.put(EntityType.WARDEN, "nadzorcę");
-		mappings.put(EntityType.FROG, "żabę");
-		mappings.put(EntityType.TADPOLE, "kijankę");
-		mappings.put(EntityType.ALLAY, "otuszka");
 	}
 	
 	private String profesja(Profession prof) {

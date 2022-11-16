@@ -28,9 +28,6 @@ public class Posuwanie implements Listener, Runnable {
 		sounds.put(EntityType.DONKEY, Sound.ENTITY_DONKEY_DEATH);
 		sounds.put(EntityType.CAT, Sound.ENTITY_CAT_DEATH);
 		sounds.put(EntityType.PLAYER, Sound.ENTITY_DONKEY_ANGRY);
-
-		sounds.put(EntityType.FROG, Sound.ENTITY_FROG_DEATH);
-		sounds.put(EntityType.WARDEN, Sound.ENTITY_WARDEN_ROAR);
 	}
 
 	ValueMap<Entity> wyruchane = new ValueMap<>(300);
@@ -181,7 +178,7 @@ public class Posuwanie implements Listener, Runnable {
 					double z = loc.getZ() / 2 + eloc.getZ() / 2;
 					double y = loc.getY() + 1;
 
-					actor.getWorld().spawnParticle(Particle.SNOWFLAKE, x, y, z, 2048, 0.1, 0.1, 0.1, 0.15);
+					actor.getWorld().spawnParticle(Particle.CLOUD, x, y, z, 2048, 0.1, 0.1, 0.1, 0.15);
 					actor.getWorld().playSound(actor.getLocation(), Sound.ENTITY_SHULKER_BULLET_HIT, 16, 0.5f);
 					actor.getWorld().playSound(actor.getLocation(), Sound.ENTITY_FIREWORK_ROCKET_TWINKLE, 16, 0.5f);
 

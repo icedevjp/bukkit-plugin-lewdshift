@@ -1,6 +1,6 @@
 package pl.icedev.mcshift;
 
-import org.bukkit.craftbukkit.v1_19_R1.entity.CraftEntity;
+import org.bukkit.craftbukkit.v1_16_R3.entity.CraftEntity;
 import org.bukkit.entity.Entity;
 
 public class Magic {
@@ -10,7 +10,7 @@ public class Magic {
 	}
 
 	public static double getLastYaw(Entity ent) {
-		return ((CraftEntity) ent).getHandle().w;
+		return ((CraftEntity) ent).getHandle().lastYaw;
 	}
 
 	public static double normalizeAngleDegrees(double angle) {
